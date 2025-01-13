@@ -1,0 +1,118 @@
+/* Enhanced Sidebar Styling */
+.sidebar {
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .sidebar.collapsed {
+    width: 80px;
+  }
+  
+  .sidebar.expanded {
+    width: 280px;
+  }
+  
+  .sidebar .menu {
+    font-size: 24px;
+    color: #4a4a4a;
+    cursor: pointer;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .sidebar .menu:hover {
+    transform: scale(1.1);
+  }
+  
+  .sidebar .new-chat {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    background-color: #f4f7fc;
+    border-radius: 25px;
+    font-size: 14px;
+    color: #4a4a4a;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .sidebar .new-chat:hover {
+    background-color: #e9eff8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .sidebar .recent {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .sidebar .recent-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-bottom: 15px;
+  }
+  
+  .sidebar .recent-entry {
+    display: flex;
+    align-items: center;
+ 
+    border-radius: 15px;
+    gap: 12px;
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .sidebar .recent-entry:hover {
+    background-color: #f4f7fc;
+    transform: translateX(5px);
+  }
+  
+  /* Bottom Section */
+  .sidebar .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .sidebar .bottom-item {
+    display: flex;
+    align-items: center;
+   
+    border-radius: 15px;
+    gap: 12px;
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .sidebar .bottom-item:hover {
+    background-color: #f4f7fc;
+    transform: translateX(5px);
+  }
+  
+  .sidebar p {
+    white-space: nowrap;      /* Prevents text from wrapping */
+    overflow: hidden;         /* Hides the overflowing text */
+    text-overflow: ellipsis;  /* Adds "..." when the text is too long */
+    display: inline-block;    /* Makes sure the element behaves like an inline element */
+    max-width: 100%;          /* Ensures the text doesn't exceed the container */
+  }
